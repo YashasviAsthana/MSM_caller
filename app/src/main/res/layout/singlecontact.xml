@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:id="@+id/mainLinear"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@android:color/background_light"
+        android:id="@+id/mainRel">
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textSize="@dimen/normaltext"
+            android:text="Name"
+            android:layout_marginStart="35dp"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phno"
+            android:textSize="@dimen/smalltext"
+            android:text="Phone No."
+            android:layout_below="@+id/name"
+            android:layout_alignStart="@+id/name" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/pic"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageButton
+            android:layout_height="30dp"
+            android:id="@+id/imageButton"
+            android:adjustViewBounds="false"
+            android:background="@drawable/dropmenu"
+            android:layout_width="30dp"
+            android:layout_gravity="center_vertical"
+            android:elevation="0dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/stat_sys_phone_call"
+            android:id="@+id/floatingActionButton4"
+            app:backgroundTint="@color/callBtn"
+            app:rippleColor="@android:color/transparent"
+            app:elevation="4dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imageButton" />
+
+    </RelativeLayout>
+
+</LinearLayout>

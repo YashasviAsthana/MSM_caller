@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="2dp"
+        android:padding="5dp">
+
+
+        <TextView
+            android:text="Name"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="@dimen/normaltext"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textSize="@dimen/smalltext"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="@dimen/smalltext"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/balance"
+            android:textSize="@dimen/smalltext"
+            android:layout_centerInParent="true"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>
